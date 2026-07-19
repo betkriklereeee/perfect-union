@@ -1,0 +1,8 @@
+RewriteEngine On
+
+# Keep Shopify as the system of record for all commerce routes.
+RewriteRule ^collections(?:/(.*))?$ https://shop.perfectuniontheband.com/collections/$1 [R=301,L,NE]
+RewriteRule ^products(?:/(.*))?$ https://shop.perfectuniontheband.com/products/$1 [R=301,L,NE]
+RewriteRule ^cart(?:/(.*))?$ https://shop.perfectuniontheband.com/cart/$1 [R=301,L,NE]
+RewriteRule ^checkout(?:/(.*))?$ https://shop.perfectuniontheband.com/checkout/$1 [R=301,L,NE]
+RewriteRule ^account(?:/(.*))?$ https://shop.perfectuniontheband.com/account/$1 [R=301,L,NE]

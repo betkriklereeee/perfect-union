@@ -5,13 +5,15 @@ export const metadata: Metadata = {
   description: "Meet Perfect Union: Wayne, Dylan, and Tommy—a Los Angeles three-piece built around loud guitars, honest songwriting, and real performances.",
 };
 
+const SHOP = "https://shop.perfectuniontheband.com";
+
 export default function AboutPage() {
   return (
     <main className="about-page">
       <a className="skip" href="#story">Skip to story</a>
       <header className="site-header inner-header">
         <a className="brand" href="/" aria-label="Perfect Union home"><span>PERFECT</span><span>UNION</span></a>
-        <nav aria-label="Primary navigation"><a href="/#music">Music</a><a href="/#videos">Videos</a><a href="/#shows">Shows</a><a aria-current="page" href="/about">About</a><a href="/#merch">Shop</a></nav>
+        <nav aria-label="Primary navigation"><a href="/#music">Music</a><a href="/#videos">Videos</a><a href="/#shows">Shows</a><a aria-current="page" href="/about">About</a><a href={`${SHOP}/collections/all`}>Shop ↗</a></nav>
         <div className="header-actions"><a className="social-short" href="https://www.instagram.com/perfectuniontheband" target="_blank" rel="noreferrer" aria-label="Perfect Union on Instagram">IG ↗</a><a className="social-short" href="https://www.tiktok.com/@perfectuniontheband" target="_blank" rel="noreferrer" aria-label="Perfect Union on TikTok">TT ↗</a><a className="ticket-link" href="https://www.axs.com/events/1431152/treaty-oak-revival-tickets" target="_blank" rel="noreferrer">Tickets ↗</a></div>
       </header>
       <div className="ticker" aria-hidden="true"><div>THE BAND ✦ WAYNE · DYLAN · TOMMY ✦ LOS ANGELES, CALIFORNIA ✦ THE BAND ✦ WAYNE · DYLAN · TOMMY ✦ LOS ANGELES, CALIFORNIA ✦</div></div>

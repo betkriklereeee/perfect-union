@@ -16,7 +16,7 @@ export default function Home() {
         </a>
         <nav aria-label="Primary navigation">
           <a href="#music">Music</a><a href="#videos">Videos</a><a href="#shows">Shows</a>
-          <a href="/about">About</a><a href="#merch">Shop</a>
+          <a href="/about">About</a><a href={`${SHOP}/collections/all`}>Shop ↗</a>
         </nav>
         <div className="header-actions">
           <a className="social-short" href="https://www.instagram.com/perfectuniontheband" target="_blank" rel="noreferrer" aria-label="Perfect Union on Instagram">IG ↗</a>
