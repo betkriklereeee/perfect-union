@@ -4,4 +4,4 @@
 :HL["/assets/greek.jpg","image"]
 :HL["/assets/dead-signal.jpg","image"]
 :HL["/assets/gas-station.jpg","image"]
-0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}},"staleTime":300,"buildId":"av0kKHqQrzK5RWAcDkn_B"}
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}},"staleTime":300,"buildId":"69LQ-L5q06pOhj34kljSa"}
