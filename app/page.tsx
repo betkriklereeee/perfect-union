@@ -16,9 +16,13 @@ export default function Home() {
         </a>
         <nav aria-label="Primary navigation">
           <a href="#music">Music</a><a href="#videos">Videos</a><a href="#shows">Shows</a>
-          <a href="#about">About</a><a href="#merch">Shop</a>
+          <a href="/about">About</a><a href="#merch">Shop</a>
         </nav>
-        <a className="ticket-link" href="https://www.axs.com/events/1431152/treaty-oak-revival-tickets" target="_blank" rel="noreferrer">Tickets ↗</a>
+        <div className="header-actions">
+          <a className="social-short" href="https://www.instagram.com/perfectuniontheband" target="_blank" rel="noreferrer" aria-label="Perfect Union on Instagram">IG ↗</a>
+          <a className="social-short" href="https://www.tiktok.com/@perfectuniontheband" target="_blank" rel="noreferrer" aria-label="Perfect Union on TikTok">TT ↗</a>
+          <a className="ticket-link" href="https://www.axs.com/events/1431152/treaty-oak-revival-tickets" target="_blank" rel="noreferrer">Tickets ↗</a>
+        </div>
       </header>
 
       <div className="ticker" aria-hidden="true"><div>ALL OR NOTHING ✦ LOS ANGELES ROCK ✦ LIVE AT THE GREEK JULY 24 ✦ ALL OR NOTHING ✦ LOS ANGELES ROCK ✦ LIVE AT THE GREEK JULY 24 ✦</div></div>
@@ -70,7 +74,7 @@ export default function Home() {
       <section className="about-section" id="about">
         <div className="section-kicker">04 / The band</div>
         <blockquote>“REAL SONGS.<br /><span>REAL VOLUME.</span>”</blockquote>
-        <div className="about-copy"><p>Perfect Union started the way most real bands do—not in a boardroom, but in a warehouse studio, where Wayne, Dylan, and Tommy realized they were chasing the same sound.</p><p>That instinct became a three-piece built around loud guitars, honest songwriting, and songs that hit without pretending. With new music on the way and The Greek Theatre next, Perfect Union is only getting started.</p></div>
+        <div className="about-copy"><p>Perfect Union started in a warehouse studio, where Wayne, Dylan, and Tommy realized they were chasing the same sound.</p><div><p>A three-piece built around loud guitars, honest songwriting, and songs that hit without pretending.</p><a className="text-link" href="/about">Read the full story ↗</a></div></div>
       </section>
 
       <section className="merch-section paper" id="merch">
