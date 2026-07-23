@@ -56,9 +56,8 @@ export default function Home() {
       <section className="video-section" id="videos">
         <div className="section-kicker">02 / Watch</div>
         <a className="video-card" href="https://youtu.be/xHWx9nENxV0?si=wH2cmLaKToT0iQGZ" target="_blank" rel="noreferrer" aria-label="Watch Perfect Union music video on YouTube">
-          <img src="/assets/hero.jpg" alt="Perfect Union campaign artwork" />
+          <img src="/assets/music-video-still.jpg" alt="Perfect Union band members in a dark cinematic music video scene" />
           <span className="play">WATCH<br />NOW ↗</span>
-          <h2>LIVE, LOUD<br />&amp; UNFILTERED.</h2>
         </a>
       </section>
 
