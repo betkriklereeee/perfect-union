@@ -6,3 +6,66 @@
 
 .header-actions{justify-self:end;display:flex;align-items:center;gap:.8rem}.social-short{font-size:.72rem;font-weight:700;letter-spacing:.12em}.social-short:hover,.social-short:focus{color:var(--pink)}.text-link{font-weight:700;text-decoration:underline;text-decoration-color:var(--pink);text-underline-offset:.25rem}.inner-header{top:44px}.about-hero{height:min(90vh,850px);position:relative;display:flex;align-items:flex-end;padding:0;overflow:hidden}.about-hero>img,.about-hero>.hero-shade{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}.about-hero-copy{position:relative;z-index:2;padding:13rem 7vw 6rem}.about-hero h1{font:400 clamp(4.5rem,10vw,9rem)/.8 Anton,sans-serif;margin:.4rem 0}.about-hero h1 em{color:var(--pink);font-style:normal}.story-grid{display:grid;grid-template-columns:1fr 1fr;gap:8vw;margin-top:5rem}.story h2{font-size:clamp(4.5rem,8vw,8rem)}.story-copy{font-size:1.1rem;line-height:1.7}.story-lede{font:400 1.8rem/1.35 Anton,sans-serif}.members{padding-bottom:9rem}.member-list{margin:4rem 0 7rem;border-top:1px solid var(--line)}.member-list p{margin:0;padding:1.2rem 0;border-bottom:1px solid var(--line);font:400 clamp(2.5rem,6vw,5.5rem)/1 Anton,sans-serif}.member-list span{display:inline-block;width:12vw;color:var(--pink);font:700 .8rem Oswald,sans-serif;letter-spacing:.15em}.members blockquote{font:400 clamp(4rem,9vw,8rem)/.82 Anton,sans-serif;margin:0}.members blockquote span{color:var(--pink)}.social-callout{text-align:center}.social-callout h2{font-size:clamp(4.5rem,9vw,8.5rem)}.social-callout .actions{justify-content:center}
 @media(max-width:800px){.header-actions{gap:.6rem}.social-short{display:none}.about-hero{height:760px}.about-hero-copy{padding:10rem 5vw 5rem}.about-hero h1{font-size:clamp(4rem,20vw,6.5rem)}.story-grid{grid-template-columns:1fr;gap:1rem;margin-top:3rem}.member-list span{width:18vw}.social-callout{text-align:left}.social-callout .actions{justify-content:flex-start}}
+
+/* Revision pass: sticky navigation, responsive menu, and Web3Forms contact UI */
+html{scroll-padding-top:94px}
+.site-header,.inner-header{position:sticky;top:0;background:rgba(8,8,8,.94);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px)}
+.site-header{height:90px}
+.site-header nav{gap:1.25rem;font-size:.7rem;letter-spacing:.1em}
+.hero{min-height:calc(100vh - 134px)}
+.hero-copy{padding-top:7rem}
+.video-card{cursor:default}
+.video-card:hover img{transform:none;filter:saturate(.65)}
+.contact-email{display:inline-block;margin-top:2.5rem}
+
+.contact-form{max-width:880px;margin-top:3rem}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.25rem}
+.field{display:flex;flex-direction:column;gap:.45rem;margin-bottom:1.25rem}
+.field label{text-transform:uppercase;letter-spacing:.12em;font-size:.72rem;font-weight:700}
+.field label span{font-weight:400;opacity:.72}
+.field input,.field select,.field textarea{width:100%;border:1px solid rgba(238,231,219,.55);border-radius:0;background:rgba(8,8,8,.18);color:var(--paper);font:inherit;padding:.85rem 1rem;outline:none}
+.field select option{color:#080808}
+.field textarea{resize:vertical;min-height:9rem}
+.field input:focus,.field select:focus,.field textarea:focus{border-color:var(--pink);box-shadow:0 0 0 3px rgba(246,79,166,.2)}
+.botcheck{position:absolute!important;width:1px!important;height:1px!important;overflow:hidden!important;clip:rect(0 0 0 0)!important;white-space:nowrap!important}
+.form-submit-row{display:flex;align-items:center;gap:1.25rem;flex-wrap:wrap;margin-top:1.25rem}
+.form-status{margin:0;max-width:34rem}
+.form-status.success{color:#fff}
+.form-status.error,.form-status.rate-limit{color:#ffd0e8}
+.button:disabled{cursor:wait;opacity:.62}
+
+.contact-page{background:var(--olive);min-height:100vh}
+.contact-intro{padding-bottom:3rem}
+.contact-intro h1{font:400 clamp(5rem,12vw,11rem)/.8 Anton,sans-serif;margin:.3rem 0 2rem;letter-spacing:-.025em}
+.contact-intro h1 em{color:var(--pink);font-style:normal}
+.contact-intro>p:last-child{max-width:42rem;font-size:1.2rem;line-height:1.5}
+.contact-form-section{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(240px,.5fr);gap:7vw;padding-top:2rem}
+.contact-form-section .contact-form{margin-top:0}
+.contact-form-section aside{border-left:1px solid var(--line);padding-left:2rem}
+.contact-form-section aside a{font-family:Anton,sans-serif;text-decoration:underline;text-decoration-color:var(--pink);overflow-wrap:anywhere}
+.compact-footer{padding-top:2rem;border-top:1px solid var(--line)}
+.compact-footer .footer-row{margin-top:0}
+
+@media(max-width:1100px){
+  .site-header{grid-template-columns:auto 1fr auto;padding-inline:3vw}
+  .site-header nav{gap:.8rem;font-size:.62rem}
+  .header-actions .social-short{display:none}
+}
+
+@media(max-width:800px){
+  html{scroll-padding-top:122px}
+  .site-header,.inner-header{height:auto;min-height:72px;grid-template-columns:1fr auto;top:0;padding:0 5vw}
+  .site-header nav{display:flex;grid-column:1/-1;order:3;width:calc(100% + 10vw);margin:0 -5vw;overflow-x:auto;padding:.7rem 5vw;border-top:1px solid var(--line);gap:1.15rem;font-size:.65rem;scrollbar-width:none}
+  .site-header nav::-webkit-scrollbar{display:none}
+  .site-header nav a{white-space:nowrap}
+  .header-actions{grid-column:2}
+  .hero{min-height:calc(100svh - 158px)}
+  .hero-copy{padding-top:5rem}
+  .form-grid,.contact-form-section{grid-template-columns:1fr}
+  .contact-form-section{gap:3rem}
+  .contact-form-section aside{border-left:0;border-top:1px solid var(--line);padding:2rem 0 0}
+  .contact-intro{padding-top:4rem}
+  .contact-intro h1{font-size:clamp(4.5rem,23vw,7rem)}
+  .contact-form{margin-top:2rem}
+  .form-submit-row{align-items:flex-start;flex-direction:column}
+}

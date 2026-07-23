@@ -1,3 +1,5 @@
+import ContactForm from "./components/ContactForm";
+
 const SHOP = "https://shop.perfectuniontheband.com";
 
 const socials = [
@@ -15,8 +17,9 @@ export default function Home() {
           <span>PERFECT</span><span>UNION</span>
         </a>
         <nav aria-label="Primary navigation">
-          <a href="#music">Music</a><a href="#videos">Videos</a><a href="#shows">Shows</a>
-          <a href="/about">About</a><a href={`${SHOP}/collections/all`}>Shop ↗</a>
+          <a href="#top">Home</a><a href="#music">Music</a><a href="#videos">Videos</a>
+          <a href="#shows">Shows</a><a href="/about">About</a>
+          <a href={`${SHOP}/collections/all`}>Shop ↗</a><a href="/contact">Contact</a>
         </nav>
         <div className="header-actions">
           <a className="social-short" href="https://www.instagram.com/perfectuniontheband" target="_blank" rel="noreferrer" aria-label="Perfect Union on Instagram">IG ↗</a>
@@ -45,18 +48,18 @@ export default function Home() {
           <div><p className="stamp">NEW MUSIC INCOMING</p><h2>ALL OR<br /><span>NOTHING.</span></h2></div>
           <div className="release-card">
             <img src="/assets/all-or-nothing.png" alt="All or Nothing Perfect Union artwork" />
-            <div><p>Perfect Union</p><h3>Turn it all the way up.</h3><p>Heartland rock, alternative country, indie, and emo—loud where it needs to be and honest everywhere else.</p><a href="https://www.youtube.com/@PerfectUnionTheBand" target="_blank" rel="noreferrer">Follow for the next release ↗</a></div>
+            <div><p>Perfect Union</p><h3>Turn it all the way up.</h3><p>Heartland rock, alternative country, indie, and emo—loud where it needs to be and honest everywhere else.</p><a href="https://linktr.ee/perfectuniontheband" target="_blank" rel="noreferrer">Follow for the next release ↗</a></div>
           </div>
         </div>
       </section>
 
       <section className="video-section" id="videos">
         <div className="section-kicker">02 / Watch</div>
-        <a className="video-card" href="https://www.youtube.com/@PerfectUnionTheBand" target="_blank" rel="noreferrer" aria-label="Watch Perfect Union on YouTube">
+        <div className="video-card" aria-label="Perfect Union music video coming soon">
           <img src="/assets/hero.jpg" alt="Perfect Union campaign artwork" />
-          <span className="play">PLAY<br />LOUD ↗</span>
+          <span className="play">COMING<br />SOON</span>
           <h2>LIVE, LOUD<br />&amp; UNFILTERED.</h2>
-        </a>
+        </div>
       </section>
 
       <section className="shows-section paper" id="shows">
@@ -74,7 +77,7 @@ export default function Home() {
       <section className="about-section" id="about">
         <div className="section-kicker">04 / The band</div>
         <blockquote>“REAL SONGS.<br /><span>REAL VOLUME.</span>”</blockquote>
-        <div className="about-copy"><p>Perfect Union started in a warehouse studio, where Wayne, Dylan, and Tommy realized they were chasing the same sound.</p><div><p>A three-piece built around loud guitars, honest songwriting, and songs that hit without pretending.</p><a className="text-link" href="/about">Read the full story ↗</a></div></div>
+        <div className="about-copy"><p>Perfect Union started in a warehouse studio, where a shared instinct became a sound built to be played loud.</p><div><p>A band built around loud guitars, honest songwriting, and songs that hit without pretending.</p><a className="text-link" href="/about">Read the full story ↗</a></div></div>
       </section>
 
       <section className="merch-section paper" id="merch">
@@ -87,7 +90,8 @@ export default function Home() {
 
       <footer id="contact">
         <p className="eyebrow">Booking · Press · Collaborations</p><h2>MAKE<br /><em>CONTACT.</em></h2>
-        <a className="email" href="mailto:perfectuniontheband@gmail.com">perfectuniontheband@gmail.com ↗</a>
+        <ContactForm />
+        <a className="email contact-email" href="mailto:perfectuniontheband@gmail.com">Or email perfectuniontheband@gmail.com ↗</a>
         <div className="footer-row"><div>{socials.map(([name, url]) => <a key={name} href={url} target="_blank" rel="noreferrer">{name} ↗</a>)}</div><p>© 2026 PERFECT UNION · LOS ANGELES</p></div>
       </footer>
     </main>
