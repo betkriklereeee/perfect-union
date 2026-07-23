@@ -39,7 +39,7 @@ export default function Home() {
           <p className="lede">Perfect Union writes loud, plays louder, and doesn’t apologize for either.</p>
           <div className="actions"><a className="button pink" href="#music">Hear the band</a><a className="button ghost" href="#shows">See us live</a></div>
         </div>
-        <p className="vertical-note">SCROLL TO ENTER THE UNION ↓</p>
+        <p className="vertical-note">SCROLL FOR MORE ↓</p>
       </section>
 
       <section className="music-section paper" id="music">

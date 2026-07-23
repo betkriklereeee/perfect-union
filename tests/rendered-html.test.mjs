@@ -57,5 +57,6 @@ test("removes member names and the member list from About", async () => {
 
   assert.doesNotMatch(html, /Wayne|Dylan|Tommy/);
   assert.doesNotMatch(html, /class="members"|class="member-list"/);
+  assert.doesNotMatch(html, /THE UNION/);
   assert.match(html, /href="\/contact">Contact<\/a>/);
 });
