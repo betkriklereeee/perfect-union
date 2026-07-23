@@ -55,11 +55,11 @@ export default function Home() {
 
       <section className="video-section" id="videos">
         <div className="section-kicker">02 / Watch</div>
-        <div className="video-card" aria-label="Perfect Union music video coming soon">
+        <a className="video-card" href="https://youtu.be/xHWx9nENxV0?si=wH2cmLaKToT0iQGZ" target="_blank" rel="noreferrer" aria-label="Watch Perfect Union music video on YouTube">
           <img src="/assets/hero.jpg" alt="Perfect Union campaign artwork" />
-          <span className="play">COMING<br />SOON</span>
+          <span className="play">WATCH<br />NOW ↗</span>
           <h2>LIVE, LOUD<br />&amp; UNFILTERED.</h2>
-        </div>
+        </a>
       </section>
 
       <section className="shows-section paper" id="shows">

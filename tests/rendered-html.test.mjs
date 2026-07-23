@@ -30,6 +30,9 @@ test("renders revised home navigation, Linktree, and contact form", async () => 
   assert.match(html, /<a href="#top">Home<\/a>/);
   assert.match(html, /href="\/contact">Contact<\/a>/);
   assert.match(html, /https:\/\/linktr\.ee\/perfectuniontheband/);
+  assert.match(html, /https:\/\/youtu\.be\/xHWx9nENxV0\?si=wH2cmLaKToT0iQGZ/);
+  assert.match(html, /WATCH/);
+  assert.doesNotMatch(html, /music video coming soon/);
   assert.match(html, /name="inquiry_type"/);
   assert.match(html, /Merchandise Support/);
   assert.match(html, /data-captcha="true"/);
