@@ -28,6 +28,8 @@ test("renders revised home navigation, Linktree, and contact form", async () => 
   const html = await response.text();
 
   assert.match(html, /<a href="#top">Home<\/a>/);
+  assert.match(html, /googletagmanager\.com\/gtag\/js\?id=G-7DZ9E2SYP2/);
+  assert.match(html, /gtag\('config', 'G-7DZ9E2SYP2'\)/);
   assert.match(html, /href="\/contact">Contact<\/a>/);
   assert.match(html, /https:\/\/linktr\.ee\/perfectuniontheband/);
   assert.match(html, /https:\/\/youtu\.be\/xHWx9nENxV0\?si=wH2cmLaKToT0iQGZ/);
@@ -50,6 +52,7 @@ test("renders the contact page with all required fields", async () => {
   const html = await response.text();
 
   assert.match(html, /Contact Perfect Union/);
+  assert.match(html, /googletagmanager\.com\/gtag\/js\?id=G-7DZ9E2SYP2/);
   assert.match(html, /name="name"/);
   assert.match(html, /name="email"/);
   assert.match(html, /name="inquiry_type"/);
@@ -64,6 +67,7 @@ test("removes member names and the member list from About", async () => {
   const html = await response.text();
 
   assert.doesNotMatch(html, /Wayne|Dylan|Tommy/);
+  assert.match(html, /googletagmanager\.com\/gtag\/js\?id=G-7DZ9E2SYP2/);
   assert.doesNotMatch(html, /class="members"|class="member-list"/);
   assert.doesNotMatch(html, /THE UNION/);
   assert.match(html, /href="\/contact">Contact<\/a>/);
