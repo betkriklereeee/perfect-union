@@ -58,6 +58,11 @@ export default function Home() {
         <a className="video-card" href="https://youtu.be/xHWx9nENxV0?si=wH2cmLaKToT0iQGZ" target="_blank" rel="noreferrer" aria-label="Watch Perfect Union music video on YouTube">
           <img src="/assets/music-video-still.jpg" alt="Perfect Union band members in a dark cinematic music video scene" />
           <span className="play">WATCH<br />NOW ↗</span>
+          <div className="video-overlay">
+            <p>Official Music Video</p>
+            <h2>PERFECT UNION —<br />BLACK SUN RISING</h2>
+            <span>Watch on YouTube ↗</span>
+          </div>
         </a>
       </section>
 
@@ -82,8 +87,8 @@ export default function Home() {
       <section className="merch-section paper" id="merch">
         <div className="merch-head"><div><div className="section-kicker">05 / Official goods</div><h2>WEAR IT<br />TO DEATH.</h2></div><a className="button dark" href={`${SHOP}/collections/all`} target="_blank" rel="noreferrer">Shop all merch ↗</a></div>
         <div className="products">
-          <a href={`${SHOP}/products/dead-signal-pocket-tee?variant=48657211162849`} target="_blank" rel="noreferrer"><img src="/assets/dead-signal.jpg" alt="Dead Signal black pocket tee, front and back" /><div><h3>“DEAD SIGNAL” POCKET TEE</h3><p>$40.00 · View in Shopify ↗</p></div></a>
-          <a href={`${SHOP}/products/gas-station-gray-tee?variant=48666569998561`} target="_blank" rel="noreferrer"><img src="/assets/gas-station.jpg" alt="Gas Station gray Perfect Union tee" /><div><h3>“GAS STATION” GRAY TEE</h3><p>$30.00 · View in Shopify ↗</p></div></a>
+          <a href={`${SHOP}/products/dead-signal-pocket-tee?variant=48657211162849`} target="_blank" rel="noreferrer"><img src="/assets/dead-signal-model.jpeg" alt="Model wearing the Dead Signal Perfect Union tee, showing the back artwork" /><div><h3>“DEAD SIGNAL” POCKET TEE</h3><p>$40.00 · View in Shopify ↗</p></div></a>
+          <a href={`${SHOP}/products/gas-station-gray-tee?variant=48666569998561`} target="_blank" rel="noreferrer"><img src="/assets/gas-station-model.jpeg" alt="Model wearing the Gas Station gray Perfect Union tee" /><div><h3>“GAS STATION” GRAY TEE</h3><p>$30.00 · View in Shopify ↗</p></div></a>
         </div>
       </section>
 

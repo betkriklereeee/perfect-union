@@ -69,3 +69,34 @@ html{scroll-padding-top:94px}
   .contact-form{margin-top:2rem}
   .form-submit-row{align-items:flex-start;flex-direction:column}
 }
+
+/* Mobile navigation, roomier sections, featured video, and model photography */
+section{padding-block:9.5rem}
+.video-section{padding-bottom:10.5rem}
+.video-card{cursor:pointer}
+.video-overlay{position:absolute;z-index:2;left:3vw;right:3vw;bottom:3vw;padding:1.4rem 1.6rem;background:rgba(8,8,8,.88);border-left:7px solid var(--pink);box-shadow:10px 10px 0 rgba(227,76,30,.9);color:var(--paper);max-width:760px}
+.video-overlay p{margin:0 0 .45rem;text-transform:uppercase;letter-spacing:.16em;font-size:.72rem;font-weight:700;color:var(--pink)}
+.video-overlay h2{position:static;margin:0 0 .65rem;font-size:clamp(2.1rem,4.5vw,4.8rem);line-height:.92;letter-spacing:-.015em}
+.video-overlay>span{font-size:.82rem;text-transform:uppercase;letter-spacing:.12em;font-weight:700}
+.products img{aspect-ratio:4/5;object-position:center 42%}
+
+@media(max-width:800px){
+  html{scroll-padding-top:166px}
+  .site-header,.inner-header{padding-top:.8rem}
+  .site-header .brand{align-self:center}
+  .site-header .header-actions{align-self:center}
+  .site-header nav{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));overflow:visible;gap:0;padding:.75rem 5vw .9rem}
+  .site-header nav a{padding:.35rem .2rem;font-size:.62rem;letter-spacing:.08em}
+  section{padding-block:7rem}
+  .video-section{padding-block:7rem 8rem}
+  .video-card img{height:auto;min-height:420px;object-fit:cover}
+  .video-overlay{left:5vw;right:5vw;bottom:5vw;padding:1rem 1.1rem;box-shadow:6px 6px 0 rgba(227,76,30,.9)}
+  .video-overlay h2{font-size:clamp(1.8rem,9vw,3rem)}
+  .play{top:5vw;right:5vw}
+  .products img{aspect-ratio:4/5}
+}
+
+@media(max-width:430px){
+  .site-header nav{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .site-header nav a{text-align:left}
+}

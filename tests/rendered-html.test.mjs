@@ -32,6 +32,9 @@ test("renders revised home navigation, Linktree, and contact form", async () => 
   assert.match(html, /https:\/\/linktr\.ee\/perfectuniontheband/);
   assert.match(html, /https:\/\/youtu\.be\/xHWx9nENxV0\?si=wH2cmLaKToT0iQGZ/);
   assert.match(html, /\/assets\/music-video-still\.jpg/);
+  assert.match(html, /BLACK SUN RISING/);
+  assert.match(html, /\/assets\/dead-signal-model\.jpeg/);
+  assert.match(html, /\/assets\/gas-station-model\.jpeg/);
   assert.match(html, /WATCH/);
   assert.doesNotMatch(html, /music video coming soon/);
   assert.doesNotMatch(html, /LIVE, LOUD/);
